@@ -1,0 +1,19 @@
+[
+  {
+    "id": 8870,
+    "nombre": "Bioshock Infinite",
+    "franchise": "Bioshock",
+    "logros": "80/80",
+    "numLogros": "80/80",
+    "favorito": true,
+    "estado": "Completado",
+    "info": "Completado en modo 1999",
+    "numVideos" : "5",
+    "linkYT": "https://store.steampowered.com/app/8870/",
+    "fecha": "2024-05-10",
+    "calificacion": "10",
+    "archivo": "https://store.steampowered.com/app/8870/",
+    "imagen": "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/header.jpg"
+  }
+
+]

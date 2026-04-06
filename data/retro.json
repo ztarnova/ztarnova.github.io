@@ -1,0 +1,48 @@
+[
+  {
+    "id": 3594,
+    "consola": "SNES",
+    "nombre": "Bomberman 3",
+    "franchise": "Bomberman",
+    "info": "-",
+    "imagen": "112600",
+    "logros": "19/31",
+    "estado": "Jugando",
+    "fecha": "2026-04-05",
+    "numVideos": 2,
+    "linkYT": "https://retroachievements.org/game/3594",
+    "archivo": "https://retroachievements.org/game/3594",
+    "numLogros": "19/20",
+    "calificacion": "7/10",
+    "favorito": false
+    
+  },
+  {
+    "id": 1234,
+    "consola": "PS1",
+    "nombre": "Castlevania Symphony of the Night",
+    "franchise": "Castlevania",
+    "info": "100%",
+    "logros": "50/50",
+    "estado": "Completado",
+    "fecha": "2026-03-20",
+    "videos": 5,
+    "archivo": "",
+    "calificacion": "10/10",
+    "favorito": true
+  },
+  {
+    "id": 5678,
+    "consola": "GBA",
+    "nombre": "Metroid Fusion",
+    "franchise": "Metroid",
+    "info": "-",
+    "logros": "30/45",
+    "estado": "Jugando",
+    "fecha": "2026-04-01",
+    "videos": 3,
+    "archivo": "",
+    "calificacion": "9/10",
+    "favorito": true
+  }
+]
