@@ -3,790 +3,262 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>Steam PRO Letras</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Juegos RetroAchievements</title>
-  <!-- Bootstrap CSS -->
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      background: #1b2838;
+      color: white;
+    }
+
+    .card-game {
+      background: #2a475e;
+      border: none;
+      transition: 0.3s;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card-game:hover {
+      transform: scale(1.03);
+      background: #3b6a8a;
+    }
+
+    .game-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .fav {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .fav.active {
+      color: gold;
+    }
+
+    h2 {
+      border-bottom: 2px solid #3b6a8a;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!-- 🔥 TU NAVBAR -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand text-white" href="../index.html">ztar 🎮</a>
+
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="./jugando.html"><i class="fa-solid fa-clock"></i> Jugando
-              actualmente</a></li>
-          <li class="nav-item"><a class="nav-link" href="./steam.html"><i class="fa-brands fa-steam"></i> Steam</a></li>
-          <li class="nav-item"><a class="nav-link" href="./ra.html"><i class="fa-solid fa-gamepad"></i>
-              RetroAchievements</a></li>
-          <li class="nav-item"><a class="nav-link" href="./blizzard.html"><i class="fa-brands fa-battle-net"></i>
-              Blizzard</a></li>
-          <li class="nav-item"><a class="nav-link" href="./fanGames.html"><i class="fa-sharp fa-solid fa-heart"></i> Fan
-              Games</a></li>
-          <li class="nav-item"><a class="nav-link" href="./swmCentral.html"><i class="fa-sharp fa-solid fa-heart"></i>
-              SMW Central</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./jugando.html"><i class="fa-solid fa-clock"></i> Jugando actualmente</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./steam.html"><i class="fa-brands fa-steam"></i> Steam</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./ra.html"><i class="fa-solid fa-gamepad"></i> RetroAchievements</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./blizzard.html"><i class="fa-brands fa-battle-net"></i> Blizzard</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./fanGames.html"><i class="fa-solid fa-heart"></i> Fan Games</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./swmCentral.html"><i class="fa-solid fa-star"></i> SMW Central</a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Lista de juegos -->
-  <section id="lista" class="container py-5">
-    <h1>Lista de Juegos RetroAchievements</h1>
-    <p class="text-light">Organizados alfabéticamente de # a Z</p>
-    <div class="navegacion-letras">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
+  <!-- CONTENIDO -->
+  <div class="container py-4">
 
-          <li class="page-item"><a class="page-link" href="#letra-#">#</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-a">A</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-b">B</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-c">C</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-d">D</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-e">E</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-f">F</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-g">G</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-h">H</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-i">I</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-j">J</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-k">K</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-l">L</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-m">M</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-n">N</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-o">O</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-p">P</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-q">Q</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-r">R</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-s">S</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-t">T</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-u">U</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-v">V</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-w">W</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-x">X</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-y">Y</a></li>
-          <li class="page-item"><a class="page-link" href="#letra-z">Z</a></li>
-        </ul>
-      </nav>
+    <h1>🎮 Biblioteca Retroachievements</h1>
+
+    <!-- BUSCADOR -->
+    <input type="text" id="buscador" class="form-control mb-4" placeholder="Buscar..." onkeyup="buscar()">
+
+    <!-- NAVEGACIÓN POR LETRAS -->
+    <div class="mb-4 text-center">
+      <a href="#letra-A" class="btn btn-sm btn-secondary m-1">A</a>
+      <a href="#letra-B" class="btn btn-sm btn-secondary m-1">B</a>
+      <a href="#letra-C" class="btn btn-sm btn-secondary m-1">C</a>
+      <a href="#letra-D" class="btn btn-sm btn-secondary m-1">D</a>
+      <a href="#letra-E" class="btn btn-sm btn-secondary m-1">E</a>
+      <a href="#letra-F" class="btn btn-sm btn-secondary m-1">F</a>
+      <a href="#letra-G" class="btn btn-sm btn-secondary m-1">G</a>
+      <a href="#letra-H" class="btn btn-sm btn-secondary m-1">H</a>
+      <a href="#letra-I" class="btn btn-sm btn-secondary m-1">I</a>
+      <a href="#letra-J" class="btn btn-sm btn-secondary m-1">J</a>
+      <a href="#letra-K" class="btn btn-sm btn-secondary m-1">K</a>
+      <a href="#letra-L" class="btn btn-sm btn-secondary m-1">L</a>
+      <a href="#letra-M" class="btn btn-sm btn-secondary m-1">M</a>
+      <a href="#letra-N" class="btn btn-sm btn-secondary m-1">N</a>
+      <a href="#letra-O" class="btn btn-sm btn-secondary m-1">O</a>
+      <a href="#letra-P" class="btn btn-sm btn-secondary m-1">P</a>
+      <a href="#letra-Q" class="btn btn-sm btn-secondary m-1">Q</a>
+      <a href="#letra-R" class="btn btn-sm btn-secondary m-1">R</a>
+      <a href="#letra-S" class="btn btn-sm btn-secondary m-1">S</a>
+      <a href="#letra-T" class="btn btn-sm btn-secondary m-1">T</a>
+      <a href="#letra-U" class="btn btn-sm btn-secondary m-1">U</a>
+      <a href="#letra-V" class="btn btn-sm btn-secondary m-1">V</a>
+      <a href="#letra-W" class="btn btn-sm btn-secondary m-1">W</a>
+      <a href="#letra-X" class="btn btn-sm btn-secondary m-1">X</a>
+      <a href="#letra-Y" class="btn btn-sm btn-secondary m-1">Y</a>
+      <a href="#letra-Z" class="btn btn-sm btn-secondary m-1">Z</a>
+      <a href="#letra-#" class="btn btn-sm btn-secondary m-1">#</a>
     </div>
 
+    <!-- CONTENEDOR -->
+    <div id="contenedor"></div>
 
+  </div>
 
-   
-    <h2 class="mt-5">#</h2>
-    <div id="letra-#" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+  <script>
+    let datos = [];
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
-
-    <!-- LETRA A -->
-
-    <h2 class="mt-5">A</h2>
-    <div id="letra-a" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA B -->
-
-    <h2 class="mt-5">B</h2>
-    <div id="letra-b" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><a href="https://retroachievements.org/game/3594">3594</a></th>
-            <td>Snes - Super nintendo</td>
-            <td>BomberMan 3</td>
-            <td class="estado-jugando">BomberMan</td>
-            <td>-</td>
-            <td>19/31</td>
-            <td>Jugando</td>
-            <td>05/04/2026</td>
-            <td>2</td>
-            <td><a href="">Enlace</a></td>
-            <td>7/10</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- LETRA C -->
-
-    <h2 class="mt-5">C</h2>
-    <div id="letra-c" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA D -->
-
-    <h2 class="mt-5">D</h2>
-    <div id="letra-d" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA E -->
-
-    <h2 class="mt-5">E</h2>
-    <div id="letra-e" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA F -->
-
-    <h2 class="mt-5">F</h2>
-    <div id="letra-f" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA G -->
-
-    <h2 class="mt-5">G</h2>
-    <div id="letra-g" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA H -->
-
-    <h2 class="mt-5">H</h2>
-    <div id="letra-h" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA I -->
-
-    <h2 class="mt-5">I</h2>
-    <div id="letra-i" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA J -->
-
-    <h2 class="mt-5">J</h2>
-    <div id="letra-j" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA K -->
-
-    <h2 class="mt-5">K</h2>
-    <div id="letra-k" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA L -->
-
-    <h2 class="mt-5">L</h2>
-    <div id="letra-l" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA M -->
-
-    <h2 class="mt-5">M</h2>
-    <div id="letra-m" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA N -->
-
-    <h2 class="mt-5">N</h2>
-    <div id="letra-a" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA O -->
-
-    <h2 class="mt-5">O</h2>
-    <div id="letra-o" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>v
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA P -->
-
-    <h2 class="mt-5">P</h2>
-    <div id="letra-p" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA Q -->
-
-    <h2 class="mt-5">Q</h2>
-    <div id="letra-q" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA R -->
-
-    <h2 class="mt-5">R</h2>
-    <div id="letra-r" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA S -->
-
-    <h2 class="mt-5">S</h2>
-    <div id="letra-s" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA T -->
-
-    <h2 class="mt-5">T</h2>
-    <div id="letra-t" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA U -->
-
-    <h2 class="mt-5">U</h2>
-    <div id="letra-u" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA V -->
-
-    <h2 class="mt-5">V</h2>
-    <div id="letra-v" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA W -->
-
-    <h2 class="mt-5">W</h2>
-    <div id="letra-w" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA X -->
-
-    <h2 class="mt-5">X</h2>
-    <div id="letra-x" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- LETRA Y -->
-
-    <h2 class="mt-5">Y</h2>
-    <div id="letra-y" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-    <!-- LETRA Z -->
-
-    <h2 class="mt-5">Z</h2>
-    <div id="letra-z" class="table-responsive">
-      <table class="table table-dark table-striped table-bordered text-center align-middle">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Consola</th>
-            <th>Nombre</th>
-            <th>Franchise</th>
-            <th>Info</th>
-            <th>Logros</th>
-            <th>Estado</th>
-            <th>Fecha</th>
-            <th># Videos</th>
-            <th>Archivo</th>
-            <th>Calificación</th>
-            <th>Favorito</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-
-  </section>
-
+    fetch("../data/retro.json")
+      .then(res => res.json())
+      .then(data => {
+        datos = data;
+        renderPorLetras(data);
+      })
+      .catch(error => console.error("ERROR:", error));
+
+    function agruparPorLetra(lista) {
+      let grupos = {};
+
+      lista.forEach(j => {
+        let letra = j.nombre.charAt(0).toUpperCase();
+        if (!/[A-Z]/.test(letra)) letra = "#";
+
+        if (!grupos[letra]) grupos[letra] = [];
+        grupos[letra].push(j);
+      });
+
+      return grupos;
+    }
+
+    function renderPorLetras(lista) {
+      let cont = document.getElementById("contenedor");
+      cont.innerHTML = "";
+
+      let grupos = agruparPorLetra(lista);
+
+      Object.keys(grupos).sort().forEach(letra => {
+
+        cont.innerHTML += `<h2 id="letra-${letra}">${letra}</h2><div class="row">`;
+
+        grupos[letra].forEach(j => {
+
+          let esFav = j.favorito;
+          let progreso = calcularProgreso(j.logros);
+
+          cont.innerHTML += `
+        <div class="col-md-4 mb-4">
+          <div class="card card-game">
+
+            <img class="img-juego"
+                src="https://media.retroachievements.org/Images/${j.imagen}.png">
+
+            <div class="p-3">
+
+              <div class="d-flex justify-content-between">
+                <h5>Nombre: ${j.nombre}</h5>
+                <span class="fav">
+                  ${j.favorito ? "⭐" : "☆"}
+                </span>
+              </div>
+
+              <p>Franquicia: ${j.franchise}</p>
+              <p>Info: ${j.info}</p>
+              <p>Fecha: ${j.fecha}</p>
+              <p>Numero de videos: ${j.numVideos}</p>
+              <p>Archivo :<a target="_blank" href="${j.linkYT}" class="btn btn-sm btn-light"> Link Youtube <i class="fa-brands fa-youtube"></i></a></p> 
+              <p>Estado: ${j.estado}</p>
+              <p>Calificación: ⭐ ${j.calificacion} ⭐</p>
+              <p>Logros: ${j.numLogros}</p>
+
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width:${progreso}%">${progreso}%</div>
+              </div>
+
+              
+
+              <a target="_blank" href="${j.archivo}" class="btn btn-sm btn-light">Ver pagina RetroAchievements</a>
+
+            </div>
+          </div>
+        </div>
+      `;
+        });
+
+        cont.innerHTML += `</div>`;
+      });
+    }
+
+    function buscar() {
+      let texto = document.getElementById("buscador").value.toLowerCase();
+      let filtrados = datos.filter(j => j.nombre.toLowerCase().includes(texto));
+      renderPorLetras(filtrados);
+    }
+
+    function calcularProgreso(logros) {
+      if (!logros.includes("/")) return 0;
+      let [a, b] = logros.split("/");
+      return Math.round((a / b) * 100);
+    }
+
+    function toggleFav(id) {
+      if (favoritos.includes(id)) {
+        favoritos = favoritos.filter(f => f !== id);
+      } else {
+        favoritos.push(id);
+      }
+
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+      renderPorLetras(datos);
+    }
+  </script>
   <!-- Footer -->
   <footer>
     <p>ztar</p>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
