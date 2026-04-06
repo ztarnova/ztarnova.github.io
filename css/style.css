@@ -1,0 +1,41 @@
+body {
+  background-color: #0d0d0d; /* Negro */
+  color: #e0e0e0;
+}
+
+.navbar {
+  background-color: #4b0082; /* Morado */
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar a:hover {
+  color: #d8b4ff !important; /* Morado claro al pasar */
+}
+
+h1, h2 {
+  color: #d8b4ff; /* Morado claro */
+}
+
+.table thead {
+  background-color: #4b0082;
+  color: white;
+}
+
+.table tbody tr {
+  background-color: #1a1a1a;
+}
+
+footer {
+  background-color: #4b0082;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+td .estado-jugando{
+  background-color: orangered !important;
+}
